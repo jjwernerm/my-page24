@@ -1,0 +1,25 @@
+.bg-img {
+  background-image: url('https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/bg-img.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+.p-navbar-layaout {
+  padding: 2vh;
+}
+
+.h-navbar {
+  height: 8vh;
+}
+
+.h-main {
+  height: 65vh;
+}
+
+.h-footer {
+  height: 23vh;
+}
