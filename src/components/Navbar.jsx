@@ -192,7 +192,7 @@ export default function Example() {
                   key={item.name}
                   as="a"
                   href={item.href}
-                  className="block px-4 py-2 text-white data-[focus]:bg-gray-700 hover:text-white"
+                  className="block px-4 py-2 text-white data-[focus]:bg-gray-700 hover:text-white hover:bg-gray-700"
                 >
                   {item.icon}
                   {' '}
