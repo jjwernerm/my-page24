@@ -1,7 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import './styles.css';
 
 import Footer from './components/Footer.jsx';
+
+import { ContactProvider } from './context/ContactContext.jsx';
 
 import NavbarLayout from './layouts/NavbarLayout.jsx';
 
@@ -16,17 +19,19 @@ export default function App() {
   return (
     <>
       <div className="bg-img">
-        <BrowserRouter>
-          <NavbarLayout />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/joa" element={<Joa />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/challenges" element={<Challenges />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
+        <ContactProvider>
+          <BrowserRouter>
+            <NavbarLayout />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/joa" element={<Joa />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/challenges" element={<Challenges />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <Footer />
+          </BrowserRouter>
+        </ContactProvider>
       </div>
     </>
   );
