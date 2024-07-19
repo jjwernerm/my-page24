@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <>
 
-      <div className='h-footer flex flex-col items-center text-white text-center'>
+      <div className='h-footer flex flex-col items-center justify-center text-white text-center text-sm md:text-base'>
         <img
           alt="My Logo"
           src="https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/logo.svg"

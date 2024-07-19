@@ -66,9 +66,9 @@ export default function Contact() {
   return (
     <>
 
-      <div className="h-main">
-        <div className="flex justify-center p-5">
-          <div className="bg-gray-800 shadow-gray-700 rounded-lg shadow-md p-5">
+      <div className="h-main flex justify-center items-end md:items-center text-sm md:text-base">
+        <div className="">
+          <div className="bg-gray-800 shadow-gray-700 rounded-lg shadow-md m-2 p-2">
             <p className="text-white text-center my-4">
               Escríbeme y pronto me pondré en contacto contigo para conocernos.
             </p>

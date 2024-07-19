@@ -8,20 +8,10 @@
   background-image: url('https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/bg-img.png');
 }
 
-.p-navbar-layaout {
-  padding: 2vh;
-}
-
-.h-navbar {
-  height: 8vh;
-}
-
-.h-main {  
-  height: 65vh;
-  padding-top: 12vh;
+.h-main {
+  height: 70vh;
 }
 
 .h-footer {
-  height: 23vh;
-  padding-top: 12vh;
+  height: 30vh;
 }

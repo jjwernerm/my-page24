@@ -19,7 +19,6 @@ export default function Home() {
             Descargar CV
           </a>
         </div>
-
       </div>
 
     </>

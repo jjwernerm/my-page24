@@ -13,80 +13,25 @@ import {
 } from '@headlessui/react';
 
 import {
-  FontAwesomeIcon
-} from '@fortawesome/react-fontawesome';
-
-import {
-  faHouseChimney,
-  faUser,
-  faGraduationCap,
-  faEnvelope,
-  faSheetPlastic
-} from '@fortawesome/free-solid-svg-icons';
-
-import {
-  faLinkedin,
-  faGithub
-} from '@fortawesome/free-brands-svg-icons';
-
-import {
   Bars3Icon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
 
-const user = {
-  name: 'Joanny Werner',
-  email: 'joannywerner@gmail.com',
-  imageUrl: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/my-photo.png',
-}
-const navigation = [
-  {
-    name: 'Inicio',
-    href: '/',
-    icon: <FontAwesomeIcon icon={faHouseChimney} />
-  },
-  {
-    name: 'Joa',
-    href: '/Joa',
-    icon: <FontAwesomeIcon icon={faUser} />
-  },
-  {
-    name: 'Challenges',
-    href: '/Challenges',
-    icon: <FontAwesomeIcon icon={faGraduationCap} />
-  },
-  {
-    name: 'Contacto',
-    href: '/Contact',
-    icon: <FontAwesomeIcon icon={faEnvelope} />
-  },
-]
-const userNavigation = [
-  {
-    name: 'Linkedin',
-    href: 'https://www.linkedin.com/in/joannywerner/',
-    icon: <FontAwesomeIcon icon={faLinkedin} />
-  },
-  {
-    name: 'Github',
-    href: 'https://github.com/jjwernerm',
-    icon: <FontAwesomeIcon icon={faGithub} />
-  },
-  {
-    name: 'Descargar CV',
-    href: 'https://drive.google.com/file/d/1D6LUxy6Jf_bU7ZhK62MqDn_HrATOVz3m/view?usp=sharing',
-    icon: <FontAwesomeIcon icon={faSheetPlastic} />
-  },
-];
+import { 
+  navigation, 
+  user, 
+  userNavigation 
+} from '../data/DataNavbar.jsx';
 
 export default function Example() {
   return (
     <>
 
       {/********** min-width: 768px;  menu **********/}
-      <Disclosure as="nav" className="bg-gray-800 rounded-lg shadow-md shadow-gray-700">
+      <Disclosure as="nav" className="bg-gray-800 rounded-lg shadow-md shadow-gray-700
+        h-navbar m-4 fixed top-0 left-0 right-0 z-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="h-navbar flex items-center justify-between">
+          <div className="flex items-center justify-between">
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <img
