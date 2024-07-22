@@ -1,62 +1,139 @@
 import {
-  icons,
   challengesArray
 } from '../data/DataChallenges.jsx';
 
 export default function Challenges() {
   return (
     <>
+      <div className="bg-gray-900 text-white shadow-md shadow-gray-700 mt-28 m-4 p-3 rounded-xl">
 
+        <div className="p-3 border-b border-gray-500">
+          <p
+            className="text-lg xs:text-2xl sm:text-3xl md:text-4xl font-semibold"
+            style={{ textShadow: '2px 2px 2px rgba(8, 145, 178, 1)' }}>
+            Mis Repositorios
+          </p>
+          <p
+            className="text-xs xs:text-sm sm:text-base">
+            Aquí encontrarás una colección de proyectos y prácticas que he realizado para mejorar mis habilidades en diversas tecnologías.
+          </p>
+        </div>
 
-      <div className='grid grid-cols-3 gap-3 justify-items-center mt-28 text-white '>
-        {icons.map((item) => (
-          <div
-            key={item.name}
-            className={`text-center cursor-pointer transition ease-in-out delay-150 duration-100 hover:-translate-y-1 hover:scale-110 ${item.style}`}
-          >
-            <div className="text-3xl md:text-6xl">
-              {item.icon}
+        {/* * * * block-1 * * * */}
+        <div className="max-h-96 overflow-y-auto p-3">
+
+          {challengesArray.sort((a, b) => a.title.localeCompare(b.title)).map((item) => (
+
+            <div
+              className='grid grid-cols-2 gap-2 m-2 sm:hidden'
+              key={item.title}>
+
+              {/* * * * div-1 * * * */}
+              <div>
+                <a
+                  href={item.web}
+                  target="_blank">
+                  <img
+                    className='w-full h-full rounded-md'
+                    href={item.web}
+                    alt='Website image'
+                    src={item.img}
+                  />
+                </a>
+              </div>
+
+              {/* * * * div-2 * * * */}
+              <div>
+                <p className="text-cyan-600 font-semibold text-sm sm:text-base md:text-lg">{item.title}</p>
+                <p className="text-xs sm:text-sm md:text-base"> Repositorio{' '}
+                  <a
+                    href={item.github}
+                    target="_blank"
+                    className="font-semibold underline underline-offset-2">
+                    Github
+                  </a>
+                </p>
+                <p className="text-xs sm:text-sm md:text-base"> Ver sitio{' '}
+                  <a
+                    href={item.web}
+                    target="_blank"
+                    className="font-semibold underline underline-offset-2">
+                    Web
+                  </a>
+                </p>
+                <div>
+                  <p className="text-base xs:text-lg md:text-xl">
+                    {item.faHtml5} {item.faCss3Alt} {item.faJsSquare} {item.faReact}
+                  </p>
+                </div>
+              </div>
+
             </div>
-            <div className="text-sm md:text-xl">
-              {item.name}
+
+          ))}
+        </div>
+
+        {/* * * * block-2 * * * */}
+        <div className="max-h-96 overflow-y-auto p-3">
+          <div className='hidden sm:block'>
+            <div className='grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3 lg:grid-cols-4 lg:gap-4 m-2'>
+
+              {challengesArray.sort((a, b) => a.title.localeCompare(b.title)).map((item) => (
+
+                <div
+                  className='border rounded-lg text-center m-2
+                  transition ease-in-out delay-150 duration-500 hover:-translate-y-1 hover:scale-110'
+                  key={item.title}>
+
+                  {/* * * * div-1 * * * */}
+                  <div>
+                    <a
+                      href={item.web}
+                      target="_blank">
+                      <img
+                        className='w-full h-full rounded-t-md'
+                        href={item.web}
+                        alt='Website image'
+                        src={item.img}
+                      />
+                    </a>
+                  </div>
+
+                  {/* * * * div-2 * * * */}
+                  <div>
+                    <p className="text-cyan-600 font-semibold text-sm sm:text-base md:text-lg">{item.title}</p>
+                    <p className="text-xs sm:text-sm md:text-base"> Repositorio{' '}
+                      <a
+                        href={item.github}
+                        target="_blank"
+                        className="font-semibold underline underline-offset-2">
+                        Github
+                      </a>
+                    </p>
+                    <p className="text-xs sm:text-sm md:text-base"> Ver sitio{' '}
+                      <a
+                        href={item.web}
+                        target="_blank"
+                        className="font-semibold underline underline-offset-2">
+                        Web
+                      </a>
+                    </p>
+                    <div>
+                      <p className="text-base xs:text-lg md:text-xl">
+                        {item.faHtml5} {item.faCss3Alt} {item.faJsSquare} {item.faReact}
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+
+              ))}
+
             </div>
           </div>
-        ))}
-      </div>
+        </div>
 
-
-      <div className='grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-3 lg:grid-cols-4 lg:gap-4 justify-items-center mt-8'>
-        {challengesArray.sort((a, b) => a.title.localeCompare(b.title)
-        ).map((item) => (
-          <div className='w-32 h-32 md:w-48 md:h-48 flex flex-col items-center p-2 rounded-md shadow-sm shadow-gray-700 bg-gray-800'
-            key={item.title}
-          >
-            <img
-              className='w-8 h-8 rounded-md md:w-16 md:h-16 md:rounded-xl'
-              alt={item.alt}
-              src={item.img}
-            />
-            <p className='my-1 text-xs md:text-base text-center font-bold text-cyan-600'>
-              {item.title}
-            </p>
-            <div className='w-full h-full flex justify-evenly items-center text-xl text-white'>
-              <a
-                href={item.hrefTitle}
-                target="_blank"
-                className="md:text-4xl transition ease-in-out delay-150 duration-100 hover:-translate-y-1 hover:scale-110">
-                {item.iconTitle}
-              </a>
-              <a
-                href={item.hrefGithub}
-                target="_blank"
-                className="md:text-4xl transition ease-in-out delay-150 duration-100 hover:-translate-y-1 hover:scale-110">
-                {item.iconGithub}
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
-
+      </div >
     </>
   );
 };
