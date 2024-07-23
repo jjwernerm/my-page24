@@ -14,13 +14,12 @@ import {
 
 import { SelectTechnologyContext } from '../context/SelectTechnologyContext.jsx';
 
-
-
 export default function SelectMenus() {
 
   const { selected, setSelected, technologiesArray } = useContext(SelectTechnologyContext);
 
   return (
+
     <Listbox value={selected} onChange={setSelected}>
       <div className="relative mt-2">
         <ListboxButton className="relative w-full cursor-pointer rounded-md bg-gray-500 py-1.5 pl-3 pr-10 text-left text-white shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 sm:text-sm sm:leading-6">
@@ -58,5 +57,6 @@ export default function SelectMenus() {
         </ListboxOptions>
       </div>
     </Listbox>
-  )
-}
+
+  );
+};

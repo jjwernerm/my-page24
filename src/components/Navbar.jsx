@@ -17,17 +17,17 @@ import {
   XMarkIcon
 } from '@heroicons/react/24/outline';
 
-import { 
-  navigationArray, 
-  userData, 
-  userNavigationArray 
+import {
+  navigationArray,
+  userData,
+  userNavigationArray
 } from '../data/DataNavbar.jsx';
 
 export default function Navbar() {
 
   return (
+    
     <>
-
       {/********** min-width: 768px;  menu **********/}
       <Disclosure as="nav" className='h-navbar m-4 mx-4 fixed top-0 left-0 right-0 z-50 rounded-lg shadow-md shadow-gray-700 bg-gray-800'>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -106,7 +106,7 @@ export default function Navbar() {
         {/********** max-width: 768px;  menu ***********/}
         <DisclosurePanel className="md:hidden">
           <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3 text-white font-medium">
-            {navigationArray.map((item) => (              
+            {navigationArray.map((item) => (
               <NavLink
                 key={item.name}
                 to={item.href}
@@ -119,7 +119,7 @@ export default function Navbar() {
               </NavLink>
             ))}
           </div>
-          
+
           {/********** Profile not dropdown **********/}
           <div className="border-t border-gray-700 pb-3 pt-4">
             <div className="flex items-center px-5">
@@ -149,5 +149,6 @@ export default function Navbar() {
         </DisclosurePanel>
       </Disclosure>
     </>
+    
   );
 };

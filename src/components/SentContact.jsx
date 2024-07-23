@@ -14,6 +14,7 @@ export default function SentContact() {
   const { name } = useContext(ContactContext);
 
   return (
+
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10" initialFocus={cancelButtonRef} onClose={setOpen}>
         <Transition.Child
@@ -47,11 +48,11 @@ export default function SentContact() {
                     </div>
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                       <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                        Mensaje enviado { name }
+                        Mensaje enviado {name}
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">
-                        Gracias por escribirme pronto nos conoceremos.
+                          Gracias por escribirme pronto nos conoceremos.
                         </p>
                       </div>
                     </div>
@@ -80,5 +81,6 @@ export default function SentContact() {
         </div>
       </Dialog>
     </Transition.Root>
-  )
-}
+
+  );
+};

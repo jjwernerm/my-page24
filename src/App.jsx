@@ -18,24 +18,22 @@ import NotFound from './views/NotFound.jsx';
 export default function App() {
 
   return (
-    <>
 
-      <SelectTechnologyProvider>
-        <ContactProvider>
-          <BrowserRouter>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/joa" element={<Joa />} />
-              <Route path="/challenges" element={<Challenges />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-            <Footer />
-          </BrowserRouter>
-        </ContactProvider>
-      </SelectTechnologyProvider>
+    <SelectTechnologyProvider>
+      <ContactProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/joa" element={<Joa />} />
+            <Route path="/challenges" element={<Challenges />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </ContactProvider>
+    </SelectTechnologyProvider>
 
-    </>
   );
 };
