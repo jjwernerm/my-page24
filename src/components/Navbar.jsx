@@ -1,5 +1,5 @@
 import {
-  NavLink
+  NavLink,
 } from "react-router-dom";
 
 import {
@@ -18,18 +18,18 @@ import {
 } from '@heroicons/react/24/outline';
 
 import { 
-  navigation, 
-  user, 
-  userNavigation 
+  navigationArray, 
+  userData, 
+  userNavigationArray 
 } from '../data/DataNavbar.jsx';
 
-export default function Example() {
+export default function Navbar() {
+
   return (
     <>
 
       {/********** min-width: 768px;  menu **********/}
-      <Disclosure as="nav" className="bg-gray-800 rounded-lg shadow-md shadow-gray-700
-        h-navbar m-4 fixed top-0 left-0 right-0 z-50">
+      <Disclosure as="nav" className='h-navbar m-4 mx-4 fixed top-0 left-0 right-0 z-50 rounded-lg shadow-md shadow-gray-700 bg-gray-800'>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
@@ -42,7 +42,7 @@ export default function Example() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4 text-white font-medium">
-                  {navigation.map((item) => (
+                  {navigationArray.map((item) => (
                     <NavLink
                       key={item.name}
                       to={item.href}
@@ -66,14 +66,14 @@ export default function Example() {
                     <MenuButton className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Abrir menú del perfil</span>
-                      <img alt="My Photo" src={user.imageUrl} className="h-12 w-12 rounded-full" />
+                      <img alt="My Photo" src={userData.imageUrl} className="h-12 w-12 rounded-full" />
                     </MenuButton>
                   </div>
                   <MenuItems
                     transition
                     className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-md ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in shadow-gray-700"
                   >
-                    {userNavigation.map((item) => (
+                    {userNavigationArray.map((item) => (
                       <MenuItem key={item.name}>
                         <a
                           href={item.href}
@@ -106,7 +106,7 @@ export default function Example() {
         {/********** max-width: 768px;  menu ***********/}
         <DisclosurePanel className="md:hidden">
           <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3 text-white font-medium">
-            {navigation.map((item) => (              
+            {navigationArray.map((item) => (              
               <NavLink
                 key={item.name}
                 to={item.href}
@@ -124,15 +124,15 @@ export default function Example() {
           <div className="border-t border-gray-700 pb-3 pt-4">
             <div className="flex items-center px-5">
               <div className="flex-shrink-0">
-                <img alt="My Photo" src={user.imageUrl} className="h-10 w-10 rounded-full" />
+                <img alt="My Photo" src={userData.imageUrl} className="h-10 w-10 rounded-full" />
               </div>
               <div className="ml-3">
-                <div className="text-base font-medium leading-none text-white">{user.name}</div>
-                <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>
+                <div className="text-base font-medium leading-none text-white">{userData.name}</div>
+                <div className="text-sm font-medium leading-none text-gray-400">{userData.email}</div>
               </div>
             </div>
             <div className="mt-3 space-y-1 px-2">
-              {userNavigation.map((item) => (
+              {userNavigationArray.map((item) => (
                 <DisclosureButton
                   key={item.name}
                   as="a"

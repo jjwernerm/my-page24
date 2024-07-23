@@ -13,13 +13,14 @@ import {
 export const challengesArray = [
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-my-page24.jpg',
-    title: 'Mi Sitio Web',
-    github: 'https://github.com/jjwernerm/my-page24',    
-    web: '/',
+    title: 'Mi Sitio Web 2023',
+    github: 'https://github.com/jjwernerm/my-page',    
+    web: 'https://adorable-malasada-1b1d7b.netlify.app/',
     faHtml5: <FontAwesomeIcon icon={faHtml5} />,
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
     faReact: <FontAwesomeIcon icon={faReact} />,
+    id: 2,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-validar-campos.jpg', 
@@ -29,6 +30,7 @@ export const challengesArray = [
     faHtml5: <FontAwesomeIcon icon={faHtml5} />,
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
+    id: 1,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-carrito-compras.jpg', 
@@ -38,6 +40,7 @@ export const challengesArray = [
     faHtml5: <FontAwesomeIcon icon={faHtml5} />,
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
+    id: 1,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-filtrar-busqueda.jpg', 
@@ -47,6 +50,7 @@ export const challengesArray = [
     faHtml5: <FontAwesomeIcon icon={faHtml5} />,
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
+    id: 1,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-invitados-class.jpg', 
@@ -56,6 +60,7 @@ export const challengesArray = [
     faHtml5: <FontAwesomeIcon icon={faHtml5} />,
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
+    id: 1,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-practica-clases.jpg', 
@@ -65,6 +70,7 @@ export const challengesArray = [
     faHtml5: <FontAwesomeIcon icon={faHtml5} />,
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
+    id: 1,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-props.jpg', 
@@ -75,6 +81,7 @@ export const challengesArray = [
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
     faReact: <FontAwesomeIcon icon={faReact} />,
+    id: 2,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-useState.jpg', 
@@ -85,6 +92,7 @@ export const challengesArray = [
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
     faReact: <FontAwesomeIcon icon={faReact} />,
+    id: 2,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-renderizar.jpg', 
@@ -95,6 +103,7 @@ export const challengesArray = [
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
     faReact: <FontAwesomeIcon icon={faReact} />,
+    id: 2,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-useEffect.jpg', 
@@ -105,6 +114,7 @@ export const challengesArray = [
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
     faReact: <FontAwesomeIcon icon={faReact} />,
+    id: 2,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-router.jpg', 
@@ -115,6 +125,7 @@ export const challengesArray = [
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
     faReact: <FontAwesomeIcon icon={faReact} />,
+    id: 2,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-context.jpg', 
@@ -125,6 +136,7 @@ export const challengesArray = [
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
     faReact: <FontAwesomeIcon icon={faReact} />,
+    id: 2,
   },
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-alerts-prop.jpg', 
@@ -135,5 +147,17 @@ export const challengesArray = [
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
     faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
     faReact: <FontAwesomeIcon icon={faReact} />,
+    id: 2,
+  },
+  {     
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-my-page24.jpg',
+    title: 'Mi Sitio Web 2024',
+    github: 'https://github.com/jjwernerm/my-page24',    
+    web: '/',
+    faHtml5: <FontAwesomeIcon icon={faHtml5} />,
+    faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
+    faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
+    faReact: <FontAwesomeIcon icon={faReact} />,
+    id: 2,
   },
 ];

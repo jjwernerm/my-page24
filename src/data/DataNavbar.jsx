@@ -18,7 +18,7 @@ import {
   faGithub
 } from '@fortawesome/free-brands-svg-icons';
 
-export const navigation = [
+export const navigationArray = [
   {
     name: 'Inicio',
     href: '/',
@@ -41,13 +41,13 @@ export const navigation = [
   },
 ];
 
-export const user = {
+export const userData = {
   name: 'Joanny Werner',
   email: 'joannywerner@gmail.com',
   imageUrl: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/my-photo.png',
 };
 
-export const userNavigation = [
+export const userNavigationArray = [
   {
     name: 'Linkedin',
     href: 'https://www.linkedin.com/in/joannywerner/',
