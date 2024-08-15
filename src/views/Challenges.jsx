@@ -153,7 +153,7 @@ export default function Challenges() {
                   </p>
                   <div>
                     <p className="text-base xs:text-lg md:text-xl">
-                      {item.faHtml5} {item.faCss3Alt} {item.faJsSquare} {item.faReact}
+                      {item.faHtml5} {item.faCss3Alt} {item.faJsSquare} {item.faReact} {item.faNode}
                     </p>
                   </div>
                 </div>

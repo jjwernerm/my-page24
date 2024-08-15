@@ -160,4 +160,16 @@ export const challengesArray = [
     faReact: <FontAwesomeIcon icon={faReact} />,
     id: 2,
   },
+  {     
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-registrar.jpg',
+    title: 'Registrar',
+    github: 'https://github.com/jjwernerm/back-registrar',    
+    web: 'https://front-registrar.vercel.app/',
+    faHtml5: <FontAwesomeIcon icon={faHtml5} />,
+    faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
+    faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
+    faReact: <FontAwesomeIcon icon={faReact} />,
+    faNode: <FontAwesomeIcon icon={faNode} />,
+    id: 3,
+  },
 ];
