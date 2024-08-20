@@ -1,7 +1,7 @@
 export const technologiesArray = [
   {
     id: 0,
-    name: 'Filtrar tecnología',
+    name: 'Todas las Tecnologías',
     logo: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/logo.svg',
   },
   {

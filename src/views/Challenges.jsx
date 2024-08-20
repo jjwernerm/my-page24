@@ -79,7 +79,7 @@ export default function Challenges() {
               <p className="text-cyan-600 font-semibold text-sm sm:text-base md:text-lg">{item.title}</p>
               <p className="text-xs sm:text-sm md:text-base"> Repositorio{' '}
                 <a
-                  href={item.github}
+                  href={item.github_back}
                   target="_blank"
                   className="font-semibold underline underline-offset-2">
                   Github
@@ -95,7 +95,7 @@ export default function Challenges() {
               </p>
               <div>
                 <p className="text-base xs:text-lg md:text-xl">
-                  {item.faHtml5} {item.faCss3Alt} {item.faJsSquare} {item.faReact}
+                  {item.faHtml5} {item.faCss3Alt} {item.faJsSquare} {item.faReact} {item.faNode}
                 </p>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function Challenges() {
                   <p className="text-cyan-600 font-semibold text-sm sm:text-base md:text-lg">{item.title}</p>
                   <p className="text-xs sm:text-sm md:text-base"> Repositorio{' '}
                     <a
-                      href={item.github}
+                      href={item.github_back}
                       target="_blank"
                       className="font-semibold underline underline-offset-2">
                       Github
