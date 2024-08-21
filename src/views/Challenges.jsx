@@ -77,14 +77,24 @@ export default function Challenges() {
             {/* * * * div-2 * * * */}
             <div>
               <p className="text-cyan-600 font-semibold text-sm sm:text-base md:text-lg">{item.title}</p>
-              <p className="text-xs sm:text-sm md:text-base"> Repositorio{' '}
+              <p className="text-xs sm:text-sm md:text-base"> Frontend {' '}
                 <a
-                  href={item.github_back}
+                  href={item.github}
                   target="_blank"
                   className="font-semibold underline underline-offset-2">
                   Github
                 </a>
               </p>
+              <div className={item.id != 3 ? 'hidden' : 'block'}>
+                <p className="text-xs sm:text-sm md:text-base"> Backend {' '}
+                  <a
+                    href={item.backgithub}
+                    target="_blank"
+                    className="font-semibold underline underline-offset-2">
+                    Github
+                  </a>
+                </p>
+              </div>
               <p className="text-xs sm:text-sm md:text-base"> Ver sitio{' '}
                 <a
                   href={item.web}
@@ -135,14 +145,24 @@ export default function Challenges() {
                 {/* * * * div-2 * * * */}
                 <div>
                   <p className="text-cyan-600 font-semibold text-sm sm:text-base md:text-lg">{item.title}</p>
-                  <p className="text-xs sm:text-sm md:text-base"> Repositorio{' '}
+                  <p className="text-xs sm:text-sm md:text-base"> Frontend{' '}
                     <a
-                      href={item.github_back}
+                      href={item.github}
                       target="_blank"
                       className="font-semibold underline underline-offset-2">
                       Github
                     </a>
                   </p>
+                  <div className={item.id != 3 ? 'hidden' : 'block'}>
+                    <p className="text-xs sm:text-sm md:text-base"> Backend{' '}
+                      <a
+                        href={item.backgithub}
+                        target="_blank"
+                        className="font-semibold underline underline-offset-2">
+                        Github
+                      </a>
+                    </p>
+                  </div>
                   <p className="text-xs sm:text-sm md:text-base"> Ver sitio{' '}
                     <a
                       href={item.web}

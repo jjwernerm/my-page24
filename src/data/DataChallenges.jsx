@@ -163,8 +163,8 @@ export const challengesArray = [
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-registrar.jpg',
     title: 'Registrar',
-    github_back: 'https://github.com/jjwernerm/back-registrar',
-    github_front: 'https://github.com/jjwernerm/front-registrar',     
+    github: 'https://github.com/jjwernerm/front-registrar',
+    backgithub: 'https://github.com/jjwernerm/back-registrar',
     web: 'https://front-registrar.vercel.app/',
     faHtml5: <FontAwesomeIcon icon={faHtml5} />,
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
@@ -176,8 +176,8 @@ export const challengesArray = [
   {     
     img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-mostrar.jpg',
     title: 'Mostrar',
-    github_back: 'https://github.com/jjwernerm/back-mostrar',
-    github_front: 'https://github.com/jjwernerm/front-mostrar',     
+    github: 'https://github.com/jjwernerm/front-mostrar',   
+    backgithub: 'https://github.com/jjwernerm/back-mostrar',      
     web: 'https://front-mostrar.vercel.app/',
     faHtml5: <FontAwesomeIcon icon={faHtml5} />,
     faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
