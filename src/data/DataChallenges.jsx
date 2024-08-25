@@ -199,4 +199,17 @@ export const challengesArray = [
     faNode: <FontAwesomeIcon icon={faNode} />,
     id: 3,
   },
+  {     
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-eliminar.jpg',
+    title: 'Eliminar',
+    github: 'https://github.com/jjwernerm/front-eliminar',   
+    backgithub: 'https://github.com/jjwernerm/back-eliminar',      
+    web: 'https://front-eliminar.vercel.app/',
+    faHtml5: <FontAwesomeIcon icon={faHtml5} />,
+    faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
+    faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
+    faReact: <FontAwesomeIcon icon={faReact} />,
+    faNode: <FontAwesomeIcon icon={faNode} />,
+    id: 3,
+  },
 ];
