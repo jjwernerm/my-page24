@@ -212,4 +212,17 @@ export const challengesArray = [
     faNode: <FontAwesomeIcon icon={faNode} />,
     id: 3,
   },
+  {     
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-editar.jpg',
+    title: 'Editar',
+    github: 'https://github.com/jjwernerm/front-editar',   
+    backgithub: 'https://github.com/jjwernerm/back-editar',      
+    web: 'https://front-editar.vercel.app/',
+    faHtml5: <FontAwesomeIcon icon={faHtml5} />,
+    faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
+    faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
+    faReact: <FontAwesomeIcon icon={faReact} />,
+    faNode: <FontAwesomeIcon icon={faNode} />,
+    id: 3,
+  },
 ];
