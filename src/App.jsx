@@ -30,8 +30,8 @@ export default function App() {
             <Route path="/joa" element={<Joa />} />
             <Route path="/challenges" element={<Challenges />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
             <Route path="/dashboardmern" element={<DashboardMern />} />
+            <Route path="*" element={<NotFound />} />            
           </Routes>
           <Footer />
         </BrowserRouter>
