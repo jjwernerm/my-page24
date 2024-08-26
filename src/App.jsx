@@ -15,8 +15,6 @@ import Challenges from './views/Challenges.jsx';
 import Contact from './views/Contact.jsx';
 import NotFound from './views/NotFound.jsx';
 
-import DashboardMern from './views/DashboardMern.jsx';
-
 export default function App() {
 
   return (
@@ -30,7 +28,6 @@ export default function App() {
             <Route path="/joa" element={<Joa />} />
             <Route path="/challenges" element={<Challenges />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/dashboardmern" element={<DashboardMern />} />
             <Route path="*" element={<NotFound />} />            
           </Routes>
           <Footer />
