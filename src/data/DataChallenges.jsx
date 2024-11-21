@@ -238,4 +238,17 @@ export const challengesArray = [
     faNode: <FontAwesomeIcon icon={faNode} />,
     id: 3,
   },
+  {     
+    img: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/img-user.jpg',
+    title: 'Registro de Usuario',
+    github: 'https://github.com/jjwernerm/front-user',   
+    backgithub: 'https://github.com/jjwernerm/back-user',      
+    web: 'https://front-user-swart.vercel.app/',
+    faHtml5: <FontAwesomeIcon icon={faHtml5} />,
+    faCss3Alt: <FontAwesomeIcon icon={faCss3Alt} />,
+    faJsSquare: <FontAwesomeIcon icon={faJsSquare} />,
+    faReact: <FontAwesomeIcon icon={faReact} />,
+    faNode: <FontAwesomeIcon icon={faNode} />,
+    id: 3,
+  },
 ];

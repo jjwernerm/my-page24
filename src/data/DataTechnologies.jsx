@@ -16,7 +16,7 @@ export const technologiesArray = [
   },
   {
     id: 3,
-    name: 'ExpressJS',
+    name: 'NodeJS',
     logo: 'https://res.cloudinary.com/dqjnzfsp6/image/upload/my-page24/logo-nodejs.png',
   },
 ];
